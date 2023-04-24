@@ -1,4 +1,4 @@
-package com.example.ricknmorty.response
+package com.example.ricknmorty.locationresponse
 
 data class İnfo(
     val count: Int,

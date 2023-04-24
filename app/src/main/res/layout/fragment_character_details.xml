@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="@color/app_background"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/CharimageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="70dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,7 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Rick Sanchez"
+        android:textColor="@color/textcolor"
+        android:text=""
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,8 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:textSize="20dp"
-        android:text="Species: Human"
+        android:textColor="@color/textcolor"
+        android:textSize="25dp"
+        android:text="Species: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CharName" />
 
@@ -44,9 +50,10 @@
         android:id="@+id/Status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/textcolor"
         android:layout_marginTop="20dp"
-        android:text="Status: Alive"
+        android:text="Status: "
         app:layout_constraintStart_toStartOf="@+id/Species"
         app:layout_constraintTop_toBottomOf="@+id/Species" />
 
@@ -54,9 +61,10 @@
         android:id="@+id/Gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textColor="@color/textcolor"
+        android:textSize="25dp"
         android:layout_marginTop="20dp"
-        android:text="Gender: Male"
+        android:text="Gender: "
         app:layout_constraintStart_toStartOf="@+id/Status"
         app:layout_constraintTop_toBottomOf="@+id/Status" />
 
@@ -64,9 +72,10 @@
         android:id="@+id/Origin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textColor="@color/textcolor"
+        android:textSize="25dp"
         android:layout_marginTop="20dp"
-        android:text="Origin: Earth"
+        android:text="Origin: "
         app:layout_constraintStart_toStartOf="@+id/Gender"
         app:layout_constraintTop_toBottomOf="@+id/Gender" />
 
@@ -74,42 +83,35 @@
         android:id="@+id/Location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/textcolor"
         android:layout_marginTop="20dp"
-        android:text="Last Location: Earth"
+        android:text="Last Location: "
         app:layout_constraintStart_toStartOf="@+id/Origin"
         app:layout_constraintTop_toBottomOf="@+id/Origin" />
 
     <TextView
         android:id="@+id/Appears"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
         android:layout_marginTop="20dp"
-        android:text="Appears on: 51 chapters"
+        android:textColor="@color/textcolor"
+        android:text="Appears on: "
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/CharimageView"
         app:layout_constraintStart_toStartOf="@+id/Location"
         app:layout_constraintTop_toBottomOf="@+id/Location" />
-
-    <TextView
-        android:id="@+id/First_seen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        android:text="First seen in: XXX"
-        app:layout_constraintStart_toStartOf="@+id/Appears"
-        app:layout_constraintTop_toBottomOf="@+id/Appears" />
 
     <ImageView
         android:id="@+id/back"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:tint="@color/bottom_nav_selected_item"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
-
-
-
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        app:tint="@color/textcolor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

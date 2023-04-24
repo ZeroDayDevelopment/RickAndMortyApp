@@ -18,7 +18,15 @@
         android:id="@+id/characterDetailsFragment"
         android:name="com.example.ricknmorty.ui.CharacterDetailsFragment"
         android:label="fragment_character_details"
-        tools:layout="@layout/fragment_character_details" />
+        tools:layout="@layout/fragment_character_details" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <action
+            android:id="@+id/action_characterDetailsFragment_to_characterFragment2"
+            app:destination="@id/characterFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/episodeFragment2"
         android:name="com.example.ricknmorty.ui.EpisodeFragment"
@@ -32,7 +40,14 @@
         android:id="@+id/episodeDetailsFragment"
         android:name="com.example.ricknmorty.ui.EpisodeDetailsFragment"
         android:label="fragment_episode_details"
-        tools:layout="@layout/fragment_episode_details" />
+        tools:layout="@layout/fragment_episode_details" >
+        <action
+            android:id="@+id/action_episodeDetailsFragment_to_episodeFragment2"
+            app:destination="@id/episodeFragment2" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/locationFragment2"
         android:name="com.example.ricknmorty.ui.LocationFragment"
@@ -46,5 +61,12 @@
         android:id="@+id/locationDetailsFragment"
         android:name="com.example.ricknmorty.ui.LocationDetailsFragment"
         android:label="fragment_location_details"
-        tools:layout="@layout/fragment_location_details" />
+        tools:layout="@layout/fragment_location_details" >
+        <action
+            android:id="@+id/action_locationDetailsFragment_to_locationFragment2"
+            app:destination="@id/locationFragment2" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
 </navigation>

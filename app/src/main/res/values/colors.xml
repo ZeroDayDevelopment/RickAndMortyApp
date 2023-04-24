@@ -7,7 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bottom_nav_background">#232f34</color>
+    <color name="app_background">#262b32</color>
+    <color name="textcolor">#f4f5f4</color>
+    <color name="item_color">#3c3f45</color>
     <color name="bottom_nav_item">#587787</color>
     <color name="bottom_nav_selected_item">#208D45</color>
     <color name="fragment_background">#FFFFFFFF</color>

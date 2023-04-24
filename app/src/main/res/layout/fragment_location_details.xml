@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/EpisodeimageView"
+        android:id="@+id/LocationimageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="70dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,12 +28,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Citadel of Ricks"
+        android:text=""
         android:textSize="30dp"
+        android:textColor="@color/textcolor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EpisodeimageView" />
+        app:layout_constraintTop_toBottomOf="@+id/LocationimageView" />
 
     <TextView
         android:id="@+id/Type"
@@ -35,8 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
+        android:textColor="@color/textcolor"
         android:textSize="20dp"
-        android:text="Type: Space station"
+        android:text="Type: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LocationName" />
 
@@ -44,37 +52,35 @@
         android:id="@+id/Dimension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
         android:textSize="20dp"
         android:layout_marginTop="20dp"
-        android:text="Dimension: Unknown"
+        android:text="Dimension: "
         app:layout_constraintStart_toStartOf="@+id/Type"
         app:layout_constraintTop_toBottomOf="@+id/Type" />
 
     <TextView
         android:id="@+id/Residents"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:textColor="@color/textcolor"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Residents: Earth"
+        android:text="Character Number: "
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="@+id/EpisodeimageView"
+        app:layout_constraintEnd_toEndOf="@+id/LocationimageView"
         app:layout_constraintStart_toStartOf="@+id/Dimension"
         app:layout_constraintTop_toBottomOf="@+id/Dimension" />
 
-
-
     <ImageView
-        android:id="@+id/back"
+        android:id="@+id/LocationBack"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:tint="@color/bottom_nav_selected_item"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
-
-
-
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        app:tint="@color/textcolor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

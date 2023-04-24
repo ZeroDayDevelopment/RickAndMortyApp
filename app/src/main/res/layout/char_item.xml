@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
     android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/item_color"
+        android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/CharImg"
@@ -13,39 +26,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imageplaceholder" />
 
-    <TextView
-        android:layout_marginStart="10dp"
-        android:id="@+id/CharName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Rick Sanchez"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/CharImg"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/CharName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Rick Sanchez"
+            android:textColor="@color/textcolor"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CharImg"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/Status_Species"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Dead - Alien"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/CharName"
-        app:layout_constraintTop_toBottomOf="@+id/CharName" />
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Status: Alive"
+            android:textColor="@color/textcolor"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/CharName"
+            app:layout_constraintTop_toBottomOf="@+id/CharName" />
 
-    <TextView
-        android:id="@+id/Dimension"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Gender: Male"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/Status_Species"
-        app:layout_constraintTop_toBottomOf="@+id/Status_Species" />
+        <TextView
+            android:id="@+id/Species"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Species: Human"
+            android:textColor="@color/textcolor"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/CharImg"
+            app:layout_constraintEnd_toEndOf="@+id/Status"
+            app:layout_constraintStart_toStartOf="@+id/Status"
+            app:layout_constraintTop_toBottomOf="@+id/Status" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
