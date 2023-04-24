@@ -7,6 +7,7 @@ A Rick And Morty simple app that loads information from [The Rick and Morty API]
  * Navigation
  * Bottom Navigation
  * Safe args
+ * Recyclerview
 
 <br/>
 <br/>
