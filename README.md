@@ -7,9 +7,27 @@ A Rick And Morty simple app that loads information from [The Rick and Morty API]
  * Navigation
  * Bottom Navigation
  * Safe args
- 
-![screenshot](https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172904.png?raw=true)
-![screenshot](https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172914.png?raw=true)
-![screenshot](https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172933.png?raw=true)
-![screenshot](https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172945.png?raw=true)
-![screenshot](https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_173005.png?raw=true)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>Screenshots</h1>
+<br/>
+
+
+<p float="left">
+<img src="https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172904.png" width="200"/>
+<img src="https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172914.png" width="200"/>
+</p>
+
+<p float="left">
+ <img src="https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172933.png" width="200"/>
+ <img src="https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_172945.png" width="200"/>
+</p>
+
+<p float="left">
+ <img src="https://github.com/ZeroDayDevelopment/RickAndMortyApp/blob/main/assests/Screenshot_20230424_173005.png" width="200"/>
+</p>
